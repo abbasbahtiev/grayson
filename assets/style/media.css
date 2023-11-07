@@ -1,0 +1,261 @@
+@media(max-width:1199.99px) {
+    .commerce__content-items {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .footer__content{
+        gap: 20px;
+        justify-content: center;
+    }
+    .footer__content-item-title{
+        font-size: 20px;
+    }
+    .footer__content-item {
+        min-width: 205px;
+    }
+    .footer__content-item-descr {
+        max-width: 205px;
+    }
+    .item__search input {
+        padding: 7px 5px;
+    }
+}
+
+
+@media(max-width:991.99px) {
+    .nav {
+        position: relative;
+    }
+
+    .nav__content {
+        display: flex;
+        justify-content: end;
+        gap: 20px;
+    }
+
+    .nav__search input {
+        position: absolute;
+        left: 0;
+        width: 0;
+        padding: 0;
+        height: 100%;
+        top: 0;
+        border: none;
+        transition: .5s;
+    }
+
+    .nav__search:hover input {
+        width: 100%;
+        padding: 6px 12px;
+    }
+
+    .nav__search button {
+        height: 30px;
+        width: 30px;
+    }
+
+    .nav__list {
+        position: absolute;
+        flex-direction: column;
+        background-color: white;
+        top: -500px;
+        right: 0;
+        width: 100%;
+        max-width: 200px;
+        padding: 20px 0;
+        transition: .5s;
+
+    }
+
+    .dropdown__item img {
+        order: -1;
+    }
+
+    .dropdown__list {
+        z-index: 5;
+        left: -175px;
+    }
+
+    .menu {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    .menu-btn {
+        width: 20px;
+        height: 2px;
+        background: black;
+        position: relative;
+    }
+
+    .menu-btn::before {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: black;
+        top: -7px;
+        position: absolute;
+    }
+
+    .menu-btn::after {
+        content: "";
+        width: 20px;
+        height: 2px;
+        background: black;
+        position: absolute;
+        top: 7px;
+    }
+
+    .menu:hover .nav__list {
+        top: 100%;
+    }
+
+    .customizable__title {
+        font-size: 32px;
+    }
+
+    .customizable__item-title {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .customizable__item-price {
+        font-size: 16px;
+        text-align: center;
+    }
+
+
+    .footer__content{
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .footer__content-item input{
+        max-width: 155px;
+    }
+    .footer__content-item-list-link{
+        text-align: center;
+    }
+    .footer__content-item-list{
+        text-align: center;
+    }
+}
+
+
+
+
+
+@media(max-width:767.99px) {
+    .header__title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .nav__logo img {
+        max-width: 70%;
+    }
+
+    .commerce__content-items {
+        width: 100%;
+        flex-wrap: nowrap;
+        justify-content: start;
+        overflow-x: scroll;
+    }
+
+    .commerce__content-item {
+        min-width: 225px;
+    }
+
+    .collection__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .collection__content-title {
+        font-size: 18px;
+    }
+
+    .collection__content-subtitle {
+        font-size: 32px;
+    }
+
+    .collection__content-btn {
+        padding: 12px 21px;
+    }
+
+    .customizable__item:nth-child(2)::before {
+        content: 'OUT OF STOCK';
+        padding: 5px 9px;
+        font-size: 10px;
+    }
+
+    .customizable__item:nth-child(4)::before {
+        content: 'SALE';
+        font-size: 10px;
+        padding: 5px 9px;
+    }
+
+    .item__cart-btn span {
+        font-size: 10px;
+        margin-left: 3px;
+    }
+    .item__btns{
+        gap: 10px;
+    }
+
+    .item-img__info{
+        height: 37px;
+    }
+    .customizable__items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .customizable__item-img{
+        min-width: 160px;
+    }
+}
+
+
+@media(max-width:575.99px) {
+    .header__title {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .header__subTitle {
+        font-size: 18px;
+    }
+
+    .commrce__title {
+        font-size: 32px;
+    }
+
+    .commerce__descr {
+        font-size: 14px;
+    }
+
+    .customizable__title {
+        text-align: center;
+    }
+
+    .customizable__item-title {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .customizable__item-price {
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .collection__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .collection__content-subtitle{
+        text-align: center;
+    }
+}
